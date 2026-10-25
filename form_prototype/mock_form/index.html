@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8"><title>Mock enrollment form (synthetic, not a real portal)</title>
+<style>body{font-family:Arial,sans-serif;max-width:480px;margin:30px auto}label{display:block;margin-top:10px}input,select{width:100%;padding:6px}</style>
+<h2>Mock enrollment form</h2>
+<p>Stand-in for the real portal so the extension can be demonstrated without any live system or real data.</p>
+<label>Surname <input id="surname"></label>
+<label>First name <input id="firstname"></label>
+<label>Date of birth <input id="dob" type="date"></label>
+<label>Age (auto) <input id="age" readonly></label>
+<label>Gender <select id="gender"><option value="">--</option><option>Female</option><option>Male</option></select></label>
+<label>Phone <input id="phone"></label>
+<label>Address <input id="address"></label>
+<label>Occupation <input id="occupation"></label>
+<script>
+document.getElementById("dob").addEventListener("change", e => {
+  const b = new Date(e.target.value), n = new Date();
+  let a = n.getFullYear() - b.getFullYear();
+  if (n < new Date(n.getFullYear(), b.getMonth(), b.getDate())) a--;
+  document.getElementById("age").value = isNaN(a) ? "" : a;
+});
+</script>

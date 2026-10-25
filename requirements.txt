@@ -1,0 +1,9 @@
+pandas>=2.0
+openpyxl>=3.1
+flask>=3.0
+python-dateutil>=2.8
+pytest>=8.0
+pillow>=10.0
+# optional, only for the live OCR step in form_prototype/
+groq>=0.9
+python-dotenv>=1.0

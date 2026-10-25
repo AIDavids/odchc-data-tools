@@ -1,0 +1,7 @@
+SURNAME: Akintola
+FIRST_NAME: Sample
+DOB: 14th Feb. 1991
+GENDER: Female
+PHONE: 0803 000 0001
+ADDRESS: 12 Palm Road
+OCCUPATION: Trader

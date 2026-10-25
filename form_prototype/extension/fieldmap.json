@@ -1,0 +1,4 @@
+{
+  "SURNAME": "surname", "FIRST_NAME": "firstname", "DOB": "dob", "GENDER": "gender",
+  "PHONE": "phone", "ADDRESS": "address", "OCCUPATION": "occupation"
+}

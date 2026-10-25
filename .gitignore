@@ -1,0 +1,22 @@
+# NEVER commit real data or secrets
+.env
+*.rar
+*.zip
+data/
+cleaned_csvs/
+images/
+passports/
+forms/
+txt/
+*.log
+__pycache__/
+.pytest_cache/
+*.db
+
+# Local environments and Office temp files
+venv/
+.venv/
+~$*
+
+# Private list of real values to catch before publishing (never publish this file)
+.prepush_blocklist.txt
