@@ -75,8 +75,6 @@ In the search page, each result has a "Requested by" box and a **Generate code**
 ## Also in my SIWES work (not in this repo)
 For the ICT team's ID-card programme I wrote the OpenCV logic that detects the card's blue border and crops the passport photograph, and, with a senior colleague who helped substantially, the scripts that located the photographs. The ID-card generation itself was someone else's work. None of this is published because it handles real passport photographs.
 
-## Before you push
-`python scripts/pre_push_check.py` (or tool [3] in the launcher) looks at exactly what Git would publish and blocks on API keys, an unignored `.env`, data-like files outside the allowed folders, and anything on your private `.prepush_blocklist.txt` (a git-ignored file where you list real names or numbers you have seen, so the check can make sure they never appear). It cannot judge screenshots or permissions; those are manual checks.
 
 ## Tests
 `python -m pytest` runs 49 tests covering header detection, phone/date/age cleaning, name matching, the end-to-end pipeline, the form parser, the authorization-code step and the launcher (including a locked-database case).
